@@ -9,7 +9,7 @@
 body {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 70px 1fr 150px;
+    grid-template-rows: 70px 1fr 200px;
     gap: 20px;
     justify-content: center;
     background-color: #0d1117;
