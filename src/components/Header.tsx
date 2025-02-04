@@ -6,9 +6,9 @@ function Header() {
             <h1 className="text-2xl text-[#111111]">Christian López</h1>
             <nav>
                 <ul className="flex gap-4">
-                    <NavLink href="#inicio" children="Inicio"/>
-                    <NavLink href="#experiencia" children="Experiencia"/>
-                    <NavLink href="#contacto" children="Contacto"/>
+                    <li><NavLink href="#inicio" children="Inicio"/></li>
+                    <li><NavLink href="#experiencia" children="Experiencia"/></li>
+                    <li><NavLink href="#contacto" children="Contacto"/></li>
                 </ul>
             </nav>
         </header>

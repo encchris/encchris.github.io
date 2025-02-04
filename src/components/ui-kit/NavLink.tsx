@@ -1,11 +1,12 @@
-type NavLinkProps = {
-    href: string; 
-    children: string;
+import React from "react";
+
+interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    children: React.ReactNode;
 }
 
-function NavLink({href, children}: NavLinkProps) {
+function NavLink({children, ...props}: NavLinkProps) {
     return (
-        <li><a className="text-[1.2rem] text-[#111111]" href={href}>{children}</a></li>
+        <a className="text-[1.2rem] text-[#111111]" {...props}>{children}</a>
     );
 }
 
