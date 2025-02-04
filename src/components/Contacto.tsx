@@ -1,6 +1,5 @@
-import RedirectIcon from "./ui-kit/icons/RedirectIcon";
+
 import { InfoContacto } from "./ui-kit/InfoContacto";
-import NavLink from "./ui-kit/NavLink";
 
 const infoContacto = [
     {

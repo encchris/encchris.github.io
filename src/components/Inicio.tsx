@@ -1,6 +1,29 @@
 import TechImg from "./ui-kit/TechImg";
+                
+const imagenes = [
+    {
+        src: 'img/icono-html.jpg',
+        alt: 'logo html'
+    },
+    {
+        src: 'img/icono-css.jpg',
+        alt: 'logo css'
+    },
+    {
+        src: 'img/icono-js.jpg',
+        alt: 'logo js'
+    },
+    {
+        src: 'img/icono-php.jpg',
+        alt: 'logo php'
+    },
+    {
+        src: 'img/icono-mysql.jpg',
+        alt: 'logo mysql'
+    }
+]
 
-function Sections() {
+function Inicio() {
     return (
         <section id="inicio" className="p-5 grid md:grid-cols-[2fr_270px] gap-5 bg-[#1b2430] md:scroll-mt-[60px] scroll-mt-[110px] w-full">
             <div className="flex flex-col gap-5">
@@ -16,11 +39,15 @@ function Sections() {
                 </p>
 
                 <div className="flex align-center gap-3 h-20">
-                    <TechImg src="img/icono-html.jpg" alt="logo html"/>
-                    <TechImg src="img/icono-css.jpg" alt="logo css"/>
-                    <TechImg src="img/icono-js.jpg" alt="logo js"/>
-                    <TechImg src="img/icono-php.jpg" alt="logo php"/>
-                    <TechImg src="img/icono-mysql.jpg" alt="logo mysql"/>
+                    {
+                        imagenes.map(({src, alt}, index) => (
+                            <TechImg 
+                                key={index}
+                                src={src}
+                                alt={alt}
+                            />
+                        ))
+                    }
                 </div>
             </div>
 
@@ -31,4 +58,4 @@ function Sections() {
     );
 }
 
-export default Sections;
+export default Inicio;
