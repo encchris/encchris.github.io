@@ -1,6 +1,11 @@
 import NavLink from "./ui-kit/NavLink";
 
-function Header({ showCurriculum, setShowCurriculum }) {
+interface HeaderProps {
+    showCurriculum: boolean;
+    setShowCurriculum: (value: boolean) => void; 
+}
+
+const Header: React.FC<HeaderProps> = ({ showCurriculum, setShowCurriculum }) => {
     return (
         <header className="flex flex-wrap md:justify-between items-center justify-center gap-2 bg-[#fafafa] text-white p-5 md:rounded-lg sticky top-0 z-50 no-print">
             <h1 className="text-2xl text-[#111111]">Christian López</h1>

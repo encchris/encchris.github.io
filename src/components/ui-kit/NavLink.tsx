@@ -6,7 +6,7 @@ interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     setShowCurriculum?: (show: boolean) => void;
 }
 
-function NavLink({children, showCurriculum, setShowCurriculum, ...props}: NavLinkProps) {
+function NavLink({children, setShowCurriculum, ...props}: NavLinkProps) {
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Linkedin, Globe, Phone, MapPin, Calendar, Briefcase, Award, Code, Cpu, Download, MessageCirclePlusIcon } from 'lucide-react';
+
+import { Mail, Linkedin, Globe, Phone, MapPin, Briefcase, Award, Code, Cpu, Download, MessageCirclePlusIcon } from 'lucide-react';
 
 export default function Curriculum() {
   const datosPersonales = {
